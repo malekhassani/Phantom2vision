@@ -230,7 +230,7 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
             return false;
         }
     });
-
+ //
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
