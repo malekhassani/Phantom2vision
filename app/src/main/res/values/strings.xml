@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Phantom2Vision</string>
+    <string name="activation_message_title">Activation Message</string>
+    <string name="activation_error">Activation Error: </string>
+    <string name="activation_error_code">Error Code: </string>
+    <string name="title_cam_activity">Camera activity </string>
+    <string name="title_batterie_activity">Batterie activity </string>
+    <string name="title_apropos_activity">A propos activity </string>
+    <string name="title_info_activity">Information drone activity </string>
+
+    <string name="camera_connection_ok">Connecté</string>
+    <string name="camera_connection_break">Déconnectét</string>
+
+    <string name="Message_Waiting">Chargement...</string>
+
+    <string name="title_activity_range_extender">RangeExtenderDemoActivity</string>
+    <string name="failed_to_get_repeater_info">Wi-Fi Repeater Connection Failed</string>
+    <string name="Current_Binded">Current Binded</string>
+    <string name="Info">Info</string>
+    <string name="SSID">SSID:</string>
+    <string name="MAC">MAC:</string>
+    <string name="New_Binded">New Binded</string>
+    <string name="mac_instruction1">(Mac last six characters\nUse only 0-9、A-F、a-f)</string>
+    <string name="mac_not_finish_input">mac addr not input finished</string>
+    <string name="Bind">Bind</string>
+    <string name="Bind_Success">Bind Success</string>
+    <string name="Bind_Failed">Bind Failed</string>
+    <string name="Rename_Ssid">Rename SSID</string>
+    <string name="Rename">Rename</string>
+    <string name="ssid_invalid_char">Symbols not Permitted</string>
+    <string name="ssid_instruction1">Use only "a-z","A-Z","0-9","_".\nCannot Exceed 24 Characters.</string>
+    <string name="Rename_Success">Rename Success</string>
+    <string name="Rename_Failed">Rename Failed</string>
+    <string name="Password">Password</string>
+    <string name="Set_password">Set Password</string>
+    <string name="Set_Password_Success">Set Password Success</string>
+    <string name="Set_Password_Failed">Set Password Failed</string>
+    <string name="password_instruction">Use only "a-z","A-Z","0-9". 8 - 16 Characters.\n "" for resetting the password to null</string>
+
+    <string name="demo_activation_message_title">Activation Message</string>
+    <string name="demo_activation_error">Activation Error: </string>
+    <string name="demo_activation_error_code">Error Code: </string>
+</resources>

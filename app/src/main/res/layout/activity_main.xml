@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="aghilas.ise.fr.vision.MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:text="Streaming camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/camera_btn" />
+
+    <Button
+        android:text="Etat batterie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/camera_btn"
+        android:layout_alignStart="@+id/camera_btn"
+        android:layout_margin="20dp"
+        android:id="@+id/baterie_btn" />
+
+    <Button
+        android:text="Infos Drone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baterie_btn"
+        android:layout_alignStart="@+id/baterie_btn"
+        android:background="@color/colorAccent"
+        android:layout_margin="20dp"
+
+        android:id="@+id/infos_btn" />
+
+    <Button
+        android:text="A propos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/infos_btn"
+        android:background="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:id="@+id/apropos_btn" />
+    </LinearLayout>
+</ScrollView>

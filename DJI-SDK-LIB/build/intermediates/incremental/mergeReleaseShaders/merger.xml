@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Android\V2.4.1\Sample\Android Studio\Phantom2Vision\DJI-SDK-LIB\src\main\shaders"/></dataSet><dataSet config="release"><source path="C:\Android\V2.4.1\Sample\Android Studio\Phantom2Vision\DJI-SDK-LIB\build-types\release\shaders"/></dataSet></merger>
