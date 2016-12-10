@@ -9,7 +9,7 @@
     <string name="title_info_activity">Information drone activity </string>
 
     <string name="camera_connection_ok">Connecté</string>
-    <string name="camera_connection_break">Déconnectét</string>
+    <string name="camera_connection_break">Déconnecté</string>
 
     <string name="Message_Waiting">Chargement...</string>
 
@@ -40,4 +40,16 @@
     <string name="demo_activation_message_title">Activation Message</string>
     <string name="demo_activation_error">Activation Error: </string>
     <string name="demo_activation_error_code">Error Code: </string>
+
+
+
+    <string name="title_activity_battery_info_demo">BatteryInfoDemoActivity</string>
+    <string name="battery_info">Battery Info:</string>
+    <string name="battery_history">Battery History:</string>
+    <string name="battery_set_discharge_days">SetDischargeDays</string>
+    <string name="battery_discharge_days_hint">1~7</string>
+    <string name="battery_part_voltages">Part Voltages=</string>
+
+
+    <string name="get_version">Get Version</string>
 </resources>

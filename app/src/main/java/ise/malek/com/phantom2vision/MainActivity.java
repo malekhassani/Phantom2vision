@@ -3,6 +3,7 @@ package ise.malek.com.phantom2vision;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -28,22 +29,7 @@ public class MainActivity extends BaseActivity{
     private Button cam_btn, info_btn, baterie_btn, apropos_btn;
     /***************************/
     private DJIDroneTypeDef.DJIDroneType mType;
-    //private final int SHOWDIALOG = 2;
-    private Handler handler1 = new Handler(new Handler.Callback() {
 
-        @Override
-        public boolean handleMessage(Message msg) {
-            switch (msg.what) {
-                case SHOWDIALOG:
-                    showMessage(getString(R.string.demo_activation_message_title),(String)msg.obj);
-                    break;
-
-                default:
-                    break;
-            }
-            return false;
-        }
-    });
 
 /***************mhandler******************/
 
@@ -133,7 +119,7 @@ private Handler mHandler = new Handler(new Handler.Callback() {
                             Log.e(TAG, "onGetPermissionResult = "+result);
                             Log.e(TAG, "onGetPermissionResultDescription = "+ DJIError.getCheckPermissionErrorDescription(result));
                             if (result == 0) {
-                                handler.sendMessage(handler.obtainMessage(SHOWDIALOG, "Check Permission Success"));
+                                handler.sendMessage(handler.obtainMessage(SHOWDIALOG, "Activtion avec succés"));
                                 Toast.makeText(getApplicationContext(), DJIError.getCheckPermissionErrorDescription(result),Toast.LENGTH_LONG).show();
                             } else {
                                 handler.sendMessage(handler.obtainMessage(SHOWDIALOG, "Activation échoué, vérifiez votre clé ou votre connexion"+"\n"+getString(R.string.activation_error_code)+result));
@@ -164,6 +150,10 @@ private Handler mHandler = new Handler(new Handler.Callback() {
         baterie_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(), BatterieActivity.class);
+
+                startActivity(i);
+
 
             }
         });
@@ -173,7 +163,7 @@ private Handler mHandler = new Handler(new Handler.Callback() {
             public void onClick(View v) {
 
                 Intent i= new Intent(getApplicationContext(), InfoActivity.class);
-                i.putExtra("DroneType", 0);
+               // i.putExtra("DroneType", 0);
                 startActivity(i);
 
             }
@@ -188,12 +178,13 @@ private Handler mHandler = new Handler(new Handler.Callback() {
 
 
 
-        /*DJIDrone.initWithType(getApplicationContext(), DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision);
-        DJIDrone.connectToDrone();
+        DJIDrone.initWithType(getApplicationContext(), DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision);
+        Log.e(TAG,"Init with Type start");
+       // DJIDrone.connectToDrone();
 
-       Log.e("connection",""+DJIDrone.connectToDrone()) ;
+//       Log.e("connection",""+DJIDrone.connectToDrone()) ;
 
-        new Thread(){
+       /* new Thread(){
             public void run() {
                 try {
                     DJIDrone.checkPermission(getApplicationContext(), new DJIGeneralListener() {
@@ -218,7 +209,7 @@ private Handler mHandler = new Handler(new Handler.Callback() {
             }
         }.start();*/
 
-        DJIDrone.initAPPManager(this.getApplicationContext(), new DJIDroneTypeChangedCallback() {
+      /*  DJIDrone.initAPPManager(this.getApplicationContext(), new DJIDroneTypeChangedCallback() {
 
             @Override
             public void onResult(DJIDroneTypeDef.DJIDroneType type)
@@ -227,7 +218,7 @@ private Handler mHandler = new Handler(new Handler.Callback() {
                 mHandler.sendEmptyMessage(SHOW_ALTER_DIALOG);
             }
 
-        });
+        });*/
 
         /********************************/
 

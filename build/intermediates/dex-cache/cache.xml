@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_b2e3c5f26aaf521e0d0e7717bd0e26f080fc2004\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\dji-sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="10b966b232533233df41b6d511716a2d01f0c5e0">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\dji-sdk_6219ecfbb2d146b5226ff361e6f5f7d4f8057cd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\bouncycastle.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3062c7532939b1460ff83f489ef63e56b13c82b7">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\bouncycastle_ce36c9d9decfd9c0a035564615b8b637f3127ddd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\eventbus.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="cba7a6714fbb2ade608224f346aecf6162a50b1c">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\eventbus_c3f9410efc74599743f9a9a1db2c64d0a678adfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_41d1d949fdd3df7efb4b5d67d139c856d0faa90f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\mygson-2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4e5d9c109cdf7985d0da6c93970353a265910a44">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\mygson-2.0_f57e4e43c00148ee82a6320950bd597ccc377465\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="db4563fd0e0dee8d30eaad3f1193eecc6139aedf">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_12307f128f03c590bbf519f177ae2b1cb2195537\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_767fab968356ff8c91be1f16053766af73381562\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ee372f20a3cf718b0f839370f15ab5146fb7e90f">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f683a05523b8639e6d966b5b63ffd32045e96fe6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gallas\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_7cf4f943358670d40870ee89ca2fcb51c7f227fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\pinyin4j-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b665955e1b7797cb68872f65b64df7146466704b">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\pinyin4j-2.5.0_67f11473e868223908e9c445f8221e70599f0b07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_c686a664b23d7d4ffcc80b46fdd683579613767d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_f9c2b86d853c5f53a2c65fdd9b1ed3a57e4a2307\classes.dex" />
+    </item>
+
+</items>

@@ -230,14 +230,14 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
             return false;
         }
     });
- //
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
         bConnectExenderFlag = false;
-        Intent intent= getIntent();
+        /*Intent intent= getIntent();
         type = intent.getIntExtra("DroneType", 0);
-        Log.v("type","Type" + type);
+        Log.v("type","Type" + type);*/
 
         mCurrentBindedSsidTextView = (TextView)findViewById(R.id.CurrentBindedSsidTextView);
         mConnectStateTextView=(TextView) findViewById(R.id.ConnectStateTextView);
@@ -268,7 +268,7 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
         onInitSDK(type);
 
 
-        new Thread(){
+       /* new Thread(){
             public void run() {
                 try {
                     DJIDrone.checkPermission(getApplicationContext(), new DJIGeneralListener() {
@@ -291,7 +291,7 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
                     e.printStackTrace();
                 }
             }
-        }.start();
+        }.start();*/
 
         Log.e(TAG,"init drone");
 
@@ -549,7 +549,7 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
             }
         }
 
-        DJIDrone.connectToDrone();
+//        DJIDrone.connectToDrone();
 
     }
 

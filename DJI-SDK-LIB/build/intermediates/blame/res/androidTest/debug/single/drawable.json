@@ -1,22 +1,22 @@
 [
     {
-        "merged": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_zoom_selector.xml",
-        "source": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_zoom_selector.xml"
+        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_radio_selector.xml",
+        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_radio_selector.xml"
     },
     {
-        "merged": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_lock_selector.xml",
-        "source": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_lock_selector.xml"
+        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\radio_unchecked.png",
+        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\radio_unchecked.png"
     },
     {
-        "merged": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\radio_checked.png",
-        "source": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\radio_checked.png"
+        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_zoom_selector.xml",
+        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_zoom_selector.xml"
     },
     {
-        "merged": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\radio_unchecked.png",
-        "source": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\radio_unchecked.png"
+        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_lock_selector.xml",
+        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_lock_selector.xml"
     },
     {
-        "merged": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_radio_selector.xml",
-        "source": "C:\\Android\\V2.4.1\\Sample\\Android Studio\\Phantom2Vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_radio_selector.xml"
+        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\radio_checked.png",
+        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\drawable\\radio_checked.png"
     }
 ]
