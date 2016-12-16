@@ -12,30 +12,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\dji-sdk.jar"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision.Lib\DJI-SDK-LIB\unspecified\jars\libs\pinyin4j-2.5.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="10b966b232533233df41b6d511716a2d01f0c5e0">
-        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\dji-sdk_6219ecfbb2d146b5226ff361e6f5f7d4f8057cd0\classes.dex" />
+        sha1="b665955e1b7797cb68872f65b64df7146466704b">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\pinyin4j-2.5.0_6dbf684cf9f13156434766f90fc2324c7f64d32f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\bouncycastle.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3062c7532939b1460ff83f489ef63e56b13c82b7">
-        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\bouncycastle_ce36c9d9decfd9c0a035564615b8b637f3127ddd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\eventbus.jar"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision.Lib\DJI-SDK-LIB\unspecified\jars\libs\eventbus.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="cba7a6714fbb2ade608224f346aecf6162a50b1c">
-        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\eventbus_c3f9410efc74599743f9a9a1db2c64d0a678adfb\classes.dex" />
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\eventbus_8f273d5abe1e5449950c0ff08a7795ba6dce36f5\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,12 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\mygson-2.0.jar"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision.Lib\DJI-SDK-LIB\unspecified\jars\libs\dji-sdk.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="4e5d9c109cdf7985d0da6c93970353a265910a44">
-        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\mygson-2.0_f57e4e43c00148ee82a6320950bd597ccc377465\classes.dex" />
+        sha1="10b966b232533233df41b6d511716a2d01f0c5e0">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\dji-sdk_efcaaf0780e53209d546f19b64d8fa1a24fa676c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -61,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="db4563fd0e0dee8d30eaad3f1193eecc6139aedf">
+        sha1="ba07e23ecf0ec36f845cfdbe6c2c094aadacc778">
         <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_12307f128f03c590bbf519f177ae2b1cb2195537\classes.dex" />
     </item>
     <item
@@ -79,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="ee372f20a3cf718b0f839370f15ab5146fb7e90f">
+        sha1="c7269ed96d025fc71e1fd311ac5c39b86eebc0f5">
         <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f683a05523b8639e6d966b5b63ffd32045e96fe6\classes.dex" />
     </item>
     <item
@@ -93,12 +84,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision\DJI-SDK-LIB\unspecified\jars\libs\pinyin4j-2.5.0.jar"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision.Lib\DJI-SDK-LIB\unspecified\jars\libs\bouncycastle.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="b665955e1b7797cb68872f65b64df7146466704b">
-        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\pinyin4j-2.5.0_67f11473e868223908e9c445f8221e70599f0b07\classes.dex" />
+        sha1="3062c7532939b1460ff83f489ef63e56b13c82b7">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\bouncycastle_67b3108d5c6475bfb60a14f5bb9a1264925a0c64\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\exploded-aar\Phantom2vision.Lib\DJI-SDK-LIB\unspecified\jars\libs\mygson-2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4e5d9c109cdf7985d0da6c93970353a265910a44">
+        <dex dex="D:\Disque E\Projet-Drone\Phantom2vision\app\build\intermediates\transforms\dex\debug\folders\1000\8\mygson-2.0_6daeadbeed5e89900f70bd6ad68fc0595c04cfd7\classes.dex" />
     </item>
     <item
         is-multidex="true"

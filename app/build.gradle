@@ -12,7 +12,7 @@ android {
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']*/
-            jniLibs.srcDirs = ['..\\..\\Lib\\DJI-SDK-LIB\\libs']
+            jniLibs.srcDirs = ['D:\\Disque E\\Projet-Drone\\DJI_SDK_Android_V2.4.1\\V2.4.1\\Sample\\Android Studio\\DJI-SDK-Android-V2.4.1\\Lib\\DJI-SDK-LIB\\libs']
         }
 
 
@@ -40,5 +40,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:23.4.0'
     testCompile 'junit:junit:4.12'
-    compile project(':DJI-SDK-LIB')
+    compile project(':Lib:DJI-SDK-LIB')
 }

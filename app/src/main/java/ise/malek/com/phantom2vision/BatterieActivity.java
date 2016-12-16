@@ -101,12 +101,16 @@ public class BatterieActivity extends Activity {
             {
                 if(DJIDrone.getDjiCamera() != null){
                     boolean bConnectState = DJIDrone.getDjiCamera().getCameraConnectIsOk();
+                    Log.e(TAG,"resultat du teste de connexion-->"+DJIDrone.getDjiCamera().getCameraConnectIsOk());
                     if(bConnectState){
                         mConnectStateTextView.setText(R.string.camera_connection_ok);
+                        Log.e(TAG,"connecté");
                     }
                     else{
                         mConnectStateTextView.setText(R.string.camera_connection_break);
+                        Log.e(TAG,"Déconnecté");
                     }
+
                 }
             }
         });
@@ -147,7 +151,7 @@ public class BatterieActivity extends Activity {
                     public void onResult(double result, DJIError mErr)
                     {
                         // TODO Auto-generated method stub
-                        Log.v("Inspire", mErr.errorCode + "");
+                        Log.e("Inspire", mErr.errorCode + "");
                         String ResultsString = "return code =" + mErr.errorCode;
                         handler.sendMessage(handler.obtainMessage(SHOWTOAST, ResultsString));
                     }
@@ -268,6 +272,18 @@ public class BatterieActivity extends Activity {
             relativeView.setVisibility(View.GONE);
             mGetFirmwareVersion.setVisibility(View.GONE);
         }
+    }
+    @Override
+    protected void onResume() {
+        mDjiGLSurfaceView.resume();
+
+        mTimer = new Timer();
+        Task task = new Task();
+        mTimer.schedule(task, 0, 500);
+
+        DJIDrone.getDjiBattery().startUpdateTimer(2000);
+        // TODO Auto-generated method stub
+        super.onResume();
     }
 
     private void setResultToToast(String result){

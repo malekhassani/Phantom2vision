@@ -9,7 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/DJI-SDK-LIB" />
+            <option value="$PROJECT_DIR$/Lib" />
+            <option value="$PROJECT_DIR$/Lib/DJI-SDK-LIB" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

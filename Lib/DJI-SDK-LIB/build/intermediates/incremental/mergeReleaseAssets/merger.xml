@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Disque E\Projet-Drone\Phantom2vision\Lib\DJI-SDK-LIB\assets"/><source path="D:\Disque E\Projet-Drone\Phantom2vision\Lib\DJI-SDK-LIB\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\Disque E\Projet-Drone\Phantom2vision\Lib\DJI-SDK-LIB\build-types\release\assets"/></dataSet></merger>
