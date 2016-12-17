@@ -120,10 +120,10 @@ private Handler mHandler = new Handler(new Handler.Callback() {
                             Log.e(TAG, "onGetPermissionResultDescription = "+ DJIError.getCheckPermissionErrorDescription(result));
                             if (result == 0) {
                                 handler.sendMessage(handler.obtainMessage(SHOWDIALOG, "Activtion avec succés"));
-                                Toast.makeText(getApplicationContext(), DJIError.getCheckPermissionErrorDescription(result),Toast.LENGTH_LONG).show();
+                               // Toast.makeText(getApplicationContext(), DJIError.getCheckPermissionErrorDescription(result),Toast.LENGTH_LONG).show();
                             } else {
                                 handler.sendMessage(handler.obtainMessage(SHOWDIALOG, "Activation échoué, vérifiez votre clé ou votre connexion"+"\n"+getString(R.string.activation_error_code)+result));
-                                Toast.makeText(getApplicationContext(), getString(R.string.activation_error)+DJIError.getCheckPermissionErrorDescription(result)+"\n"+getString(R.string.activation_error_code)+result,Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getApplicationContext(), getString(R.string.activation_error)+DJIError.getCheckPermissionErrorDescription(result)+"\n"+getString(R.string.activation_error_code)+result,Toast.LENGTH_LONG).show();
 
                             }
                         }

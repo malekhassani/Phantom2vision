@@ -87,6 +87,9 @@
             android:screenOrientation="landscape"
             >
         </activity>
+        <service
+            android:name="org.connectbot.service.TerminalManager"
+            android:configChanges="keyboardHidden|orientation" />
     </application>
 
 </manifest>

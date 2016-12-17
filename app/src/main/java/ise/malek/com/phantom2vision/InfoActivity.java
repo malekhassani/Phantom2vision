@@ -235,9 +235,7 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
         bConnectExenderFlag = false;
-        /*Intent intent= getIntent();
-        type = intent.getIntExtra("DroneType", 0);
-        Log.v("type","Type" + type);*/
+
 
         mCurrentBindedSsidTextView = (TextView)findViewById(R.id.CurrentBindedSsidTextView);
         mConnectStateTextView=(TextView) findViewById(R.id.ConnectStateTextView);
@@ -265,34 +263,17 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
         Tools.EditTextInputHexLimit(mEditMacAddr6,2);
         mContext = getApplicationContext();
 
-        onInitSDK(type);
+        DJIDrone.initAPPManager(this.getApplicationContext(), new DJIDroneTypeChangedCallback() {
 
+            @Override
+            public void onResult(DJIDroneTypeDef.DJIDroneType type)
+            {
+                mType = type;
+                Log.e(TAG,"type drone-->"+mType);
 
-       /* new Thread(){
-            public void run() {
-                try {
-                    DJIDrone.checkPermission(getApplicationContext(), new DJIGeneralListener() {
-
-                        @Override
-                        public void onGetPermissionResult(int result) {
-                            // TODO Auto-generated method stub
-                            Log.e(TAG, "onGetPermissionResult = "+result);
-                            Log.e(TAG, "onGetPermissionResultDescription = "+DJIError.getCheckPermissionErrorDescription(result));
-                            if (result == 0) {
-                                handler.sendMessage(handler.obtainMessage(SHOWDIALOG, DJIError.getCheckPermissionErrorDescription(result)));
-                            } else {
-                                handler.sendMessage(handler.obtainMessage(SHOWDIALOG, getString(R.string.demo_activation_error)+DJIError.getCheckPermissionErrorDescription(result)+"\n"+getString(R.string.demo_activation_error_code)+result));
-
-                            }
-                        }
-                    });
-                } catch (Exception e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
             }
-        }.start();*/
 
+        });
         Log.e(TAG,"init drone");
 
 
@@ -526,34 +507,8 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
         alert.show();
     }
 
-    private void onInitSDK(int type){
-        switch(type){
-            case 0 : {
-                DJIDrone.initWithType(this.getApplicationContext(), DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision);
-                break;
-            }
-            case 1 : {
-                DJIDrone.initWithType(this.getApplicationContext(), DJIDroneTypeDef.DJIDroneType.DJIDrone_Inspire1);
-                break;
-            }
-            case 2 : {
-                DJIDrone.initWithType(this.getApplicationContext(), DJIDroneTypeDef.DJIDroneType.DJIDrone_Phantom3_Advanced);
-                break;
-            }
-            case 3 : {
-                DJIDrone.initWithType(this.getApplicationContext(), DJIDroneTypeDef.DJIDroneType.DJIDrone_M100);
-                break;
-            }
-            default : {
-                break;
-            }
-        }
 
-//        DJIDrone.connectToDrone();
-
-    }
-
-    private void onUnInitSDK(){
+        private void onUnInitSDK(){
         DJIDrone.disconnectToDrone();
     }
 

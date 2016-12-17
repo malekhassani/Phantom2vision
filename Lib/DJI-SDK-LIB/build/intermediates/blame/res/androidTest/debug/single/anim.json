@@ -16,12 +16,12 @@
         "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\anim\\core_zoom_exit_back.xml"
     },
     {
-        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\core_push_right_in.xml",
-        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\anim\\core_push_right_in.xml"
-    },
-    {
         "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\core_zoom_enter_back.xml",
         "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\anim\\core_zoom_enter_back.xml"
+    },
+    {
+        "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\core_push_right_in.xml",
+        "source": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\bundles\\debug\\res\\anim\\core_push_right_in.xml"
     },
     {
         "merged": "D:\\Disque E\\Projet-Drone\\Phantom2vision\\Lib\\DJI-SDK-LIB\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\core_hold.xml",

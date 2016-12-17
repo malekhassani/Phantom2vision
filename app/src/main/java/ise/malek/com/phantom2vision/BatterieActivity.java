@@ -31,11 +31,12 @@ import dji.sdk.interfaces.DJIReceivedVideoDataCallBack;
 import dji.sdk.interfaces.DJISmartBatteryExecuteResultCallback;
 import dji.sdk.widget.DjiGLSurfaceView;
 
+
 /**
  * Created by gallas on 02/12/2016.
  */
 
-public class BatterieActivity extends Activity {
+public class BatterieActivity extends BaseActivity {
 
     private static final String TAG = "BatterieActivity";
 
@@ -90,7 +91,7 @@ public class BatterieActivity extends Activity {
             checkConnectState();
         }
 
-    };
+    }
 
     private void checkConnectState(){
 
@@ -101,7 +102,7 @@ public class BatterieActivity extends Activity {
             {
                 if(DJIDrone.getDjiCamera() != null){
                     boolean bConnectState = DJIDrone.getDjiCamera().getCameraConnectIsOk();
-                    Log.e(TAG,"resultat du teste de connexion-->"+DJIDrone.getDjiCamera().getCameraConnectIsOk());
+                  //  Log.e(TAG,"resultat du teste de connexion-->"+DJIDrone.getDjiCamera().getCameraConnectIsOk());
                     if(bConnectState){
                         mConnectStateTextView.setText(R.string.camera_connection_ok);
                         Log.e(TAG,"connecté");
@@ -121,7 +122,7 @@ public class BatterieActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_batterie);
-
+        onInitSDK();
         DJIDrone.getDjiCamera().setDecodeType(DJICameraDecodeTypeDef.DecoderType.Software);
 
         mDjiGLSurfaceView = (DjiGLSurfaceView)findViewById(R.id.DjiSurfaceView_battery_info);
@@ -152,6 +153,7 @@ public class BatterieActivity extends Activity {
                     {
                         // TODO Auto-generated method stub
                         Log.e("Inspire", mErr.errorCode + "");
+                        Log.e(TAG,"code erreur discharge-->"+mErr.errorCode+""+mErr.errorDescription);
                         String ResultsString = "return code =" + mErr.errorCode;
                         handler.sendMessage(handler.obtainMessage(SHOWTOAST, ResultsString));
                     }
@@ -175,6 +177,7 @@ public class BatterieActivity extends Activity {
                     {
                         // TODO Auto-generated method stub
                         handler.sendMessage(handler.obtainMessage(SHOWTOAST,  "Firmware version = "+result));
+                        Log.e(TAG,"Firmware version-->"+result);
                     }
 
                 });
@@ -201,6 +204,7 @@ public class BatterieActivity extends Activity {
             public void onResult(DJIBatteryProperty state) {
                 // TODO Auto-generated method stub
                 updateSmartBatteryInfo();
+                Log.e(TAG,"voltage de la baterie--->"+state.currentVoltage);
                 StringBuffer sb = new StringBuffer();
                 sb.append(getString(R.string.battery_info)).append("\n");
                 sb.append("designedVolume=").append(state.designedVolume).append("\n");
@@ -266,6 +270,7 @@ public class BatterieActivity extends Activity {
         DJIDrone.getDjiBattery().setBatteryUpdateInfoCallBack(mBattryUpdateInfoCallBack);
 
         if (DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision == DJIDrone.getDroneType()) {
+            Log.e(TAG,"Type du drone est:"+DJIDrone.getDroneType());
             scrollView = (ScrollView)findViewById(R.id.BatteryHistoryView);
             scrollView.setVisibility(View.GONE);
             relativeView = (RelativeLayout)findViewById(R.id.SetDischargeView);
@@ -281,9 +286,48 @@ public class BatterieActivity extends Activity {
         Task task = new Task();
         mTimer.schedule(task, 0, 500);
 
-        DJIDrone.getDjiBattery().startUpdateTimer(2000);
+        DJIDrone.getDjiBattery().startUpdateTimer(2000);//2000
         // TODO Auto-generated method stub
         super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        // TODO Auto-generated method stub
+
+        mDjiGLSurfaceView.pause();
+
+        if(mTimer!=null) {
+            mTimer.cancel();
+            mTimer.purge();
+            mTimer = null;
+        }
+
+        DJIDrone.getDjiBattery().stopUpdateTimer();
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        // TODO Auto-generated method stub
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+
+
+        if(DJIDrone.getDjiCamera() != null)
+            DJIDrone.getDjiCamera().setReceivedVideoDataCallBack(null);
+        mDjiGLSurfaceView.destroy();
+        super.onDestroy();
+    }
+
+
+    public void onReturn(View view){
+        Log.d(TAG ,"onReturn");
+        this.finish();
     }
 
     private void setResultToToast(String result){
@@ -435,5 +479,11 @@ public class BatterieActivity extends Activity {
             }
 
         });
+    }
+
+    private void onInitSDK() {
+        DJIDrone.initWithType(getApplicationContext(),
+                DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision);
+        DJIDrone.connectToDrone();
     }
 }
