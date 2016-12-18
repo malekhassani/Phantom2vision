@@ -3,21 +3,19 @@ package ise.malek.com.phantom2vision;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import dji.sdk.api.DJIDrone;
 import dji.sdk.api.DJIDroneTypeDef;
 import dji.sdk.api.DJIError;
-import dji.sdk.interfaces.DJIDroneTypeChangedCallback;
 import dji.sdk.interfaces.DJIGeneralListener;
 
 
@@ -122,7 +120,7 @@ public class MainActivity extends BaseActivity{
         apropos_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                showAboutApp();
             }
         });
 
@@ -148,4 +146,54 @@ public class MainActivity extends BaseActivity{
         AlertDialog alert = builder.create();
         alert.show();
     }
+
+    private void showAboutApp() {
+        AlertDialog.Builder	about = new AlertDialog.Builder(this);
+        about.setTitle(
+                Html.fromHtml(
+                        "<b>DJI PHANTOM 2 VISION APP</b>")
+        );
+        about.setIcon(R.drawable.icone_about);
+
+        TextView l_viewabout	= new TextView(this);
+        l_viewabout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
+        l_viewabout.setPadding(20, 10, 20, 10);
+        l_viewabout.setTextSize(20);
+        l_viewabout.setText(
+                Html.fromHtml(
+                        "<small>PROJET SEMESTRIELLE : Phantom 2 Vision</small>"+
+                                "<br/>"+"<br/>"+
+                                "<b>Developpé par:</b>"+
+                                "<br/>"+
+                                "<small>- AGHILAS ADJAOUDI</small>"+  "<br/>"+
+                                "<small>- MALEK HASSANI</small>"+
+                                "<br/>"+"<br/>"+
+                                "<small>PARIS 8 MIME<br/><a href=\"http://www.univ-paris8.fr\">univ-paris8.fr</a></small>"+
+                                "<br/>"
+                )
+        );
+
+        about.setView(l_viewabout);
+        about.setPositiveButton(
+                "OK",
+                new android.content.DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                }
+        );
+
+        about.setOnCancelListener(new android.content.DialogInterface.OnCancelListener() {
+
+                                      @Override
+                                      public void onCancel(DialogInterface dialog) {
+
+                                      }
+                                  }
+        );
+
+        about.show();
+    }
+
 }

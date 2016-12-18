@@ -80,13 +80,7 @@
             android:screenOrientation="landscape"
             >
         </activity>
-        <activity
-            android:name="ise.malek.com.phantom2vision.AproposActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:label="@string/title_apropos_activity"
-            android:screenOrientation="landscape"
-            >
-        </activity>
+
         <service
             android:name="org.connectbot.service.TerminalManager"
             android:configChanges="keyboardHidden|orientation" />
