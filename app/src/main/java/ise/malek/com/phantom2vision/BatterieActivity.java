@@ -480,7 +480,7 @@ public class BatterieActivity extends BaseActivity {
 
         });
     }
-
+//initialisartion avec le type du drone
     private void onInitSDK() {
         DJIDrone.initWithType(getApplicationContext(),
                 DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision);

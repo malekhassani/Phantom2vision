@@ -274,6 +274,8 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
             }
 
         });
+//initialisation avec le type du drone
+        onInitSDK();
         Log.e(TAG,"init drone");
 
 
@@ -506,7 +508,12 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
+    //on psécifie le type du drone pour l'initialisation
+    private void onInitSDK() {
+        DJIDrone.initWithType(getApplicationContext(),
+                DJIDroneTypeDef.DJIDroneType.DJIDrone_Vision);
+        DJIDrone.connectToDrone();
+    }
 
         private void onUnInitSDK(){
         DJIDrone.disconnectToDrone();
