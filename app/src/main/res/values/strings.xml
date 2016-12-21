@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Phantom2Vision</string>
+    <string name="app_name">DJI P2V</string>
     <string name="activation_message_title">Activation Message</string>
     <string name="activation_error">Activation Error: </string>
     <string name="activation_error_code">Error Code: </string>
@@ -13,7 +13,7 @@
 
     <string name="Message_Waiting">Chargement...</string>
 
-    <string name="title_activity_range_extender">RangeExtenderDemoActivity</string>
+    <string name="title_activity_range_extender">RangeExtenderActivity</string>
     <string name="failed_to_get_repeater_info">Wi-Fi Repeater Connection Failed</string>
     <string name="Current_Binded">Current Binded</string>
     <string name="Info">Info</string>
@@ -52,4 +52,11 @@
 
 
     <string name="get_version">Get Version</string>
+
+    <string name="sync_file_title">Sync file</string>
+
+    <string name="gimbal_pitch">PITCH</string>
+    <string name="gimbal_pitch_up">  +  </string>
+    <string name="gimbal_pitch_down">  -  </string>
+    <string name="gimbal_pitch_go">  GO  </string>
 </resources>

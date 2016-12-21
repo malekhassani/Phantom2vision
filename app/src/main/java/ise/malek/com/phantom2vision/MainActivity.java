@@ -93,6 +93,8 @@ public class MainActivity extends BaseActivity{
         cam_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent In= new Intent(getApplicationContext(),CamActivity.class);
+                startActivity(In);
 
             }
         });
@@ -161,7 +163,7 @@ public class MainActivity extends BaseActivity{
         l_viewabout.setTextSize(20);
         l_viewabout.setText(
                 Html.fromHtml(
-                        "<small>PROJET SEMESTRIELLE : Phantom 2 Vision</small>"+
+                        "<small>PROJET: Phantom 2 Vision</small>"+
                                 "<br/>"+"<br/>"+
                                 "<b>Developpé par:</b>"+
                                 "<br/>"+
